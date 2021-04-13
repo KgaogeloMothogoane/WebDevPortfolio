@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crimson+Text&display=swap" rel="stylesheet">    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/all.min.css"> -->
+    <!--Favicons-->
+    <link rel="icon" href="./images/KM logo.jpg" type="image/gif" sizes="16x16">
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Web Dev Portfolio</title>
+    <!--JavaScript Email.js-->
+    <script type="text/javascript" src="./email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_g9NGqhzIG2lT2GBNPsplu");
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <!--Start of Header Section-->
+        <header>
+            <!--Navigation-->
+            <div class="navigation-bar nav-bar">
+                <a href="#container"><img class="logo" src="./images/KM logo.jpg" alt="#" width="80" height="70"></a>
+
+                <input type="checkbox" id="check" class="checkbtn">
+                <label for="check">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="#" class="nav-link-home">Home</a></li>
+                        <li><a href="#about-section" class="nav-link-1">About</a></li>
+                        <li><a href="#projects-section" class="nav-link-2">Projects</a></li>
+                        <li><a href="#container" class="nav-link-3">Resume</a></li>
+                        <li><a href="#contact-section" class="nav-link-4">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Content on Banner-->
+            <div class="header-content">
+                <div class="portfolio-text">
+                    <span>Web Development</span>
+                    <h1>PORTFOLIO</h1>
+                </div>
+                
+                <div class="portfolio-buttons">
+                    <a href="#projects-section"><button class="portfolio-active-btn">Check out my work</button></a>
+                    <a href="#contact-section"><button class="portfolio-btn">Contact me</button></a>
+                </div>
+                <img class="home-image" src="./images/Capture.PNG">
+
+                <div class="portfolio-content">
+                    <h2>KGAOGELO MOTHOGOANE</h2>
+                    <h4>Frontend Developer</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit omnis facilis labore tempore
+                        doloremque sequi officiis officia? Repellat obcaecati nemo earum aspernatur quae, atque aliquid
+                        velit sit natus doloremque harum!</p>
+                </div>
+            </div>
+        </header>
+        <!--The End of Header Section-->
+
+        <!--Start of About Section-->
+        <div id="about-section">
+            <div class="heading">
+                <h1>A Little About Me</h1>
+            </div>
+            <span>Hey there! </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt atque vitae eligendi ea temporibus
+                perspiciatis commodi quisquam, ipsam nisi voluptates distinctio quis ad eveniet, beatae quasi hic
+                molestias
+                deserunt maxime voluptate, quos sequi nulla ratione explicabo ex. Autem, natus magnam.</p>
+            <p>Learn more about me! Check out my CV</p>
+            <a href="#"><button class="about-btn">Resume</button></a>
+        </div>
+        <!--End of About Section-->
+
+        <!--Start of Projects Section-->
+        <div id="projects-section">
+            <div class="heading">
+                <h1>Work I've Done</h1>
+            </div>
+            <h3>A little subheading belongs here.</h3>
+            <div class="all-projects">
+                <!--This is the individual projects-->
+                <div class="single-projects" id="blur">
+                    <div class="projects-img">
+                        <a href="#"><img class="img" src="./images/pexels-chevanon-photography-323682.jpg" alt="#"></a>
+                    </div>
+                    <div class="projects-content">
+                        <h2>Jeff & Sons Eatery</h2>
+                        <p>Commodi dolorem eos? Odio perferendis, vitae eaque vero totam dolorum nisi alias. Corrupti
+                            delectus ...</p>
+                        <a href="#"><button class="projects-btn view-btn">View</button></a>
+                       <button class="projects-btn" onclick="toggle()">Read More</button>
+                    </div>
+                    <!-- <div id="popup">
+                        <div class="popup-content">
+                            <h2>Jeff & Sons Eatery</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi enim odio ratione et delectus, error atque veritatis dolorem omnis unde.</p>
+                        </div>
+                        <div>
+                            <button class="projects-btn" onclick="toggle()">Close</button>
+                        </div>
+                    </div> -->
+                    <div class="projects-overlay">
+                        <div class="coding-lang-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="view-code">
+                            <a href="#"></i><button class="view-code-btn">View Code on GitHub</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End of individual project-->
+
+                <!--This is the individual projects-->
+                <div class="single-projects single-projects-right">
+                    <div class="projects-content">
+                        <h2>Queen's Coffee Bar</h2>
+                        <p>Reprehe quam quod, eaque nam tempora?
+                            Saepe dolores, ullam libero itaque rem. Itaque tempora
+                            quibusdam dolores ...</p>
+                        <a href="#"><button class="projects-btn view-btn">View</button></a>
+                        <a href="#"><button class="projects-btn">Read More</button></a>
+                    </div>
+                    <div class="projects-img">
+                        <a href="#"><img class="img" src="images/pexels-daria-obymaha-1691924.jpg" alt="#"></a>
+                    </div>
+                    <div class="projects-overlay-right">
+                        <div class="coding-lang-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="view-code">
+                            <a href="#"></i><button class="view-code-btn">View Code on GitHub</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End of individual project-->
+
+                <!--This is the individual projects-->
+                <div class="single-projects">
+                    <div class="projects-img">
+                        <a href="#"><img class="img" src="./images/pexels-john-tekeridis-3212179.jpg" alt="#"></a>
+                    </div>
+                    <div class="projects-content">
+                        <h2>H.E.R Beauty Spa</h2>
+                        <p>Lorem ipsum consectetur adipisicing elit. Laborum magni sit nisi molestiae
+                            quaerat doloremque quam nobis ...</p>
+                        <a href="#"><button class="projects-btn view-btn">View</button></a>
+                        <a href="#"><button class="projects-btn">Read More</button></a>
+                    </div>
+                    <div class="projects-overlay">
+                        <div class="coding-lang-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="view-code">
+                            <a href="#"></i><button class="view-code-btn">View Code on GitHub</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End of individual project-->
+            </div>
+        </div>
+        <!--End of Projects Section-->
+
+        <!--This is the contact section-->
+        <div id="contact-section">
+            <div class="heading">
+                <h1>Contact Me</h1>
+            </div>
+            <h3>A little subheading belongs here. </h3>
+            <div class="form">
+                <!--Start of LEFT SIDE of Contact Form-->
+                <div class="contact-details">
+                    <h3>Contact details</h3>
+                    <div class="contact-icons-wrapper">
+                        <i class="fas fa-phone-alt"></i><span class="contact-word">+27 785 050 399</span><br>
+                        <i class="fas fa-envelope"></i><span class="contact-word">Kgaogelomothogoane@gmail.com</span><br>
+                        <i class="fab fa-linkedin-in"></i><span class="contact-word"><a
+                                href="https://www.linkedin.com/in/kgaogelo-mothogoane/" target="_blank"
+                                class="icons-title">www.linkedin.com/in/kgaogelo-mothogoane
+                            </a></span><br>
+                        <i class="fab fa-github"></i><span class="contact-word"><a target="_blank" class="icons-title">https://github.com/KgaogeloMothogoane/</a></span>
+                    </div>
+                </div>
+                <!--End of Left Side-->
+
+                <!--Start of RIGHT SIDE of Contact Form-->
+                <div id="contact-form" class="contact-form">
+                    <form id="form">
+                        <h3>Send a message here</h3>
+                        <div>
+                            <input type="text" class="input-field" placeholder="First Name and Last Name" name="userName">
+                        </div>
+                        <div>
+                            <input type="email" class="input-field" placeholder="Email" name="userEmail">
+                        </div>
+                        <div>
+                            <input type="number" class="input-field" placeholder="Phone Number" name="userNumber">
+                        </div>
+                        <textarea class="input-field" rows="5" name="userMessage"></textarea>
+                        <a href="#"><button onclick="sendMail()" id="button" class="submit-btn" type="submit"
+                                value="Send">Submit</button></a>
+                    </form>
+                </div>
+                <!--End of right side-->
+            </div>
+        </div>
+        <!--End of Contact Section-->
+
+        <!--Start of Footer-->
+        <footer>
+            <p>Created by Kgaogelo Mothogoane - 2021 &copy;</p>
+        </footer>
+        <!--End of Footer-->
+    </div>
+
+    <script type="text/javascript" src="./email.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+
+</body>
+
+</html>

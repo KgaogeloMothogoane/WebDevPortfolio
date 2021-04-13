@@ -1,0 +1,1130 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-image: linear-gradient(
+    to right,
+    white 70%,
+    rgb(243, 243, 245) 30%
+  );
+}
+.heading h1 {
+  font-weight: 400;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+#check {
+  display: none;
+}
+/*--This is the start of the NAVIGATION Section--*/
+.home-image {
+  display: none;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  padding: 5px 0 0 5px;
+  margin-left: -50px;
+  cursor: pointer;
+}
+.navigation-bar {
+  background: white;
+  width: 100%;
+  top: 0;
+  padding: 2% 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.fa-bars {
+  color: rgb(28, 136, 118);
+  display: none;
+}
+.nav-bar {
+  position: fixed;
+  z-index: 999;
+}
+nav ul {
+  margin: 0;
+  padding: 0 25%;
+  list-style: 0;
+  text-align: right;
+}
+nav li {
+  display: inline-block;
+  float: none;
+}
+nav li:nth-child(2) {
+  float: left;
+}
+nav li:nth-child(3) {
+  float: left;
+}
+nav a {
+  color: rgb(28, 136, 118);
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 1% 3em;
+}
+nav a:hover {
+  color: black;
+}
+.nav-link-home {
+  display: none;
+}
+/*--This is the end of the NAVIGATION Section--*/
+
+/*--This is the start of the HOME/BANNER Section--*/
+header {
+  position: relative;
+  z-index: 1;
+}
+.header-content {
+  height: 85vh;
+  margin: auto;
+  width: 90%;
+  padding-top: 6em;
+}
+/*Wording on the BANNER*/
+.portfolio-text h1 {
+  font-size: 7em;
+  display: inline;
+  padding: 0.2em;
+}
+.portfolio-text h1::before {
+  content: " ";
+  height: 1em;
+  width: 2px;
+  background: rgb(28, 136, 118);
+  float: left;
+  margin-right: 3px;
+}
+.portfolio-text span {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 14px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-weight: 500;
+}
+/*Portfolio Buttons*/
+.portfolio-active-btn {
+  background: rgb(28, 136, 118);
+  color: white;
+  border: 1px solid rgb(28, 136, 118);
+  padding: 1em 1em;
+  margin-left: 3.5em;
+  margin-right: 1em;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.portfolio-active-btn:hover {
+  background: white;
+  color: rgb(28, 136, 118);
+}
+.portfolio-btn {
+  border: 1px solid rgb(28, 136, 118);
+  padding: 1em 1em;
+  color: black;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.portfolio-btn:hover {
+  background: rgb(28, 136, 118);
+  color: white;
+  cursor: pointer;
+}
+.portfolio-buttons {
+  margin: 7.5em 0 0 0.5em;
+}
+/*Information about myself*/
+.portfolio-content {
+  width: 50%;
+  float: right;
+  margin-top: -3em;
+}
+.portfolio-content h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+.portfolio-content h4 {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.portfolio-content h4::after {
+  content: " ";
+  display: block;
+  background: rgb(28, 136, 118);
+  width: 3em;
+  height: 2px;
+  margin-top: 0.3em;
+}
+.portfolio-content p {
+  text-align: justify;
+}
+/*--This is the end of the HOME/BANNER Section--*/
+
+/*--This is the start of the ABOUT Section--*/
+#about-section {
+  background: rgb(243, 243, 245);
+  text-align: center;
+  padding: 7em 23em;
+}
+#about-section .heading {
+  padding-bottom: 0.6em;
+}
+#about-section span {
+  color: rgb(28, 136, 118);
+  position: relative;
+  font-family: "Italianno", cursive;
+  font-size: 30px;
+}
+.about-btn {
+  border: 1px solid rgb(28, 136, 118);
+  padding: 1em 1em;
+  margin: 1em;
+  color: black;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: smaller;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.about-btn:hover {
+  background: rgb(28, 136, 118);
+  color: white;
+  cursor: pointer;
+}
+/*--This is the end of the ABOUT Section--*/
+
+/*--This is the start of the PROJECTS Section--*/
+#projects-section {
+  text-align: center;
+  padding: 7% 20%;
+}
+#projects-section h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding-bottom: 0.5em;
+}
+/*--Individual projects--*/
+.single-projects {
+  display: flex;
+  margin: 4%;
+  box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+}
+.projects-content h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.projects-content h2::after {
+  content: " ";
+  display: block;
+  background: rgb(28, 136, 118);
+  width: 6em;
+  height: 2px;
+  margin-top: 0.2em;
+  margin-left: 5.5em;
+}
+.projects-content {
+  padding: 3%;
+  background: white;
+}
+.projects-img {
+  width: 18em;
+  height: 16em;
+  position: relative;
+}
+.img {
+  width: 18em;
+  height: 16em;
+  position: relative;
+}
+/*--Read More Popup or Modal--*/
+/* #blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+#popup{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  background: yellow;
+}
+#popup.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+} */
+/*--Image OVERLAY for the LEFT side--*/
+.projects-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 18em;
+  height: 16em;
+  color: white;
+  transition: opacity 0.25s;
+  opacity: 0;
+}
+.projects-overlay:hover {
+  opacity: 1;
+}
+/*--Image OVERLAY for the RIGHT side--*/
+.projects-overlay-right {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 18em;
+  height: 16em;
+  color: white;
+  transition: opacity 0.25s;
+  left: 54.5%;
+  top: 50;
+  transform: translate(5%, 0%);
+  opacity: 0;
+}
+.projects-overlay-right:hover {
+  opacity: 1;
+}
+/*--Overlay ICONS--*/
+.coding-lang-icons {
+  padding-top: 5em;
+  margin-bottom: 1em;
+}
+.fa-html5,
+.fa-css3-alt,
+.fa-js,
+.fa-bootstrap,
+.fa-github {
+  background: rgb(28, 136, 118);
+  color: none;
+  border-radius: 50%;
+  padding: 0.7em;
+  border-radius: 50%;
+  margin: 0.3em;
+  box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+}
+/*--View Code on Github BUTTON--*/
+.view-code-btn {
+  border: none;
+  padding: 0.8em;
+  background: none;
+  border: 1px solid rgb(28, 136, 118);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.view-code-btn:hover {
+  background: rgb(28, 136, 118);
+  color: white;
+  cursor: pointer;
+}
+/*--BUTTONS on projects - VIEW && READ MORE--*/
+.view-btn {
+  background: rgb(28, 136, 118);
+  color: white;
+}
+.view-btn:hover {
+  background: white;
+  color: rgb(28, 136, 118);
+}
+.projects-btn {
+  border: 1px solid rgb(28, 136, 118);
+  padding: 2.5% 2.5%;
+  margin: 1%;
+  color: rgb(83, 79, 79);
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.projects-btn:hover {
+  background: rgb(28, 136, 118);
+  color: white;
+  cursor: pointer;
+}
+/*--This is the end of the PROJECTS Section--*/
+
+/*--This is the start of the CONTACT Section--*/
+#contact-section {
+  background: rgb(243, 243, 245);
+  padding: 7% 0 7% 0;
+  scroll-snap-align: center;
+}
+#contact-section h1,
+#contact-section h3 {
+  text-align: center;
+}
+#contact-section h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+.form {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+}
+/*--LEFT side of contact form--*/
+.contact-details {
+  background: rgb(252, 252, 252);
+  width: 40%;
+  padding: 1em 2em;
+  font-family: "Lato", sans-serif;
+}
+.fa-phone-alt,
+.fa-linkedin-in,
+.fa-github,
+.fa-envelope {
+  background: rgb(28, 136, 118);
+  color: white;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0.4em;
+  box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.08);
+}
+.icons-title {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+.icons-title:hover {
+  color: rgb(28, 136, 118);
+  font-weight: 600;
+}
+/*--RIGHT side of contact form--*/
+.contact-form {
+  background: rgb(214, 218, 218);
+  width: 60%;
+  padding: 1em;
+  text-align: center;
+}
+.form h3 {
+  text-align: center;
+}
+.contact-form h3::after {
+  content: " ";
+  display: block;
+  background: rgb(28, 136, 118);
+  width: 9em;
+  height: 2px;
+  margin-top: 0.3em;
+  margin-left: 7em;
+}
+.contact-details h3::after {
+  content: " ";
+  display: block;
+  background: rgb(28, 136, 118);
+  width: 6.4em;
+  height: 2px;
+  margin-top: 0.4em;
+  margin-left: 4.5em;
+}
+.input-field {
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  padding: 0.9em;
+  margin: 5px;
+  width: 90%;
+}
+.form h3 {
+  text-align: center;
+}
+.submit-btn {
+  border: 1px solid rgb(28, 136, 118);
+  padding: 2.5% 5%;
+  margin: 1%;
+  color: white;
+  background: rgb(28, 136, 118);
+  outline: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: smaller;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.submit-btn:hover {
+  background: none;
+  color: black;
+  cursor: pointer;
+}
+.contact-word {
+  word-break: break-all;
+}
+/*--This is the end of the CONTACT Section--*/
+
+/*--This is the start of the FOOTER Section--*/
+footer {
+  text-align: center;
+}
+
+/*Responsive design - Extra Large Screen & TV*/
+@media (min-width: 1300px) and (max-width: 1600px) {
+  /*Navigation Bar Section*/
+  .logo {
+    padding: 0;
+  }
+  nav ul {
+    padding: 0 23%;
+  }
+  /*About me Section*/
+  /*Projects Section*/
+  .projects-overlay-right {
+    left: 55.1%;
+  }
+  /*Contact Section*/
+  /*Footer Section*/
+}
+
+/*Responsive design - Extra Large Screen & TV*/
+@media (min-width: 1201px) and (max-width: 1299px) {
+  /*Navigation Bar Section*/
+  .header-content {
+    height: 65vh;
+  }
+  .logo {
+    padding: 0;
+  }
+  nav ul {
+    padding: 0.1em 22%;
+  }
+  /*About me Section*/
+  #about-section {
+    background: rgb(243, 243, 245);
+    text-align: center;
+    padding: 7em 20em;
+  }
+  /*Projects Section*/
+  .projects-overlay-right {
+    left: 53.6%;
+  }
+  .projects-content h2::after {
+    margin-left: 4.1em;
+  }
+  /*Contact Section*/
+  .contact-form h3::after {
+    width: 8em;
+    margin-left: 6.7em;
+  }
+  .contact-details h3::after {
+    width: 6em;
+    margin-left: 4.2em;
+  }
+  /*Footer Section*/
+}
+
+/*Responsive design - Desktop & Large Screen*/
+@media (min-width: 1150px) and (max-width: 1200px) {
+  /*Navigation Bar Section*/
+  .logo {
+    padding: 0;
+  }
+  nav ul {
+    padding: 0.2em 20%;
+  }
+  /*Home Section*/
+  .portfolio-content h2 {
+    font-size: 2.2em;
+  }
+  .portfolio-active-btn {
+    padding: 0.8em 0.8em;
+  }
+  .portfolio-btn {
+    padding: 0.8em 0.8em;
+  }
+  /*About me Section*/
+  #about-section {
+    background: rgb(243, 243, 245);
+    text-align: center;
+    padding: 7em 18em;
+  }
+  /*Projects Section*/
+  .projects-overlay-right {
+    left: 51%;
+  }
+  .projects-content h2::after {
+    margin-left: 3.5em;
+  }
+  /*Contact Section*/
+  .contact-form h3::after {
+    width: 8em;
+    margin-left: 5.5em;
+  }
+  .contact-details {
+    width: 40%;
+  }
+  .contact-form {
+    width: 50%;
+  }
+  .contact-details h3::after {
+    width: 6em;
+    margin-left: 3.2em;
+  }
+}
+
+/*Responsive design - Extra Large Screen & TV*/
+@media (min-width: 1025px) and (max-width: 1149px) {
+  /*Navigation Bar Section*/
+  .header-content {
+    height: 75vh;
+  }
+  .logo {
+    padding: 0;
+  }
+  nav ul {
+    padding: 0.4em 19%;
+  }
+  /*Home Section*/
+  .portfolio-content h2 {
+    font-size: 2em;
+  }
+  .portfolio-active-btn {
+    padding: 0.8em 0.8em;
+  }
+  .portfolio-btn {
+    padding: 0.8em 0.8em;
+  }
+  /*About me Section*/
+  #about-section {
+    background: rgb(243, 243, 245);
+    text-align: center;
+    padding: 7em 16em;
+  }
+  /*Projects Section*/
+  .projects-overlay-right {
+    left: 47.5%;
+  }
+  .projects-content h2::after {
+    margin-left: 2.1em;
+  }
+  /*Contact Section*/
+  .contact-form h3::after {
+    width: 8em;
+    margin-left: 3.5em;
+  }
+  .contact-details {
+    width: 40%;
+  }
+  .contact-form {
+    width: 50%;
+  }
+  .contact-details h3::after {
+    width: 6em;
+    margin-left: 3.2em;
+  }
+  /*Footer Section*/
+}
+
+/*Responsive design - Laptop Screen*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  /*Navigation Bar Section*/
+  .header-content {
+    height: 75vh;
+  }
+  .logo {
+    left: 10%;
+    padding: 0;
+  }
+  .navigation-bar {
+    padding: 2.1em 0 2.1em;
+  }
+  nav a {
+    padding: 0 2em;
+  }
+  nav ul {
+    display: flex;
+    padding: 0 0 0;
+  }
+  nav {
+    float: right;
+  }
+  /*Home Section*/
+  .portfolio-text h1 {
+    font-size: 6em;
+  }
+  .portfolio-content {
+    width: 85%;
+    float: left;
+    margin-top: 6em;
+    margin-left: 3em;
+  }
+  .portfolio-content h2 {
+    font-size: 2.5em;
+  }
+  .header-content {
+    position: relative;
+  }
+  .portfolio-buttons {
+    margin: 18em 0 0 0.5em;
+    position: absolute;
+  }
+  .portfolio-active-btn {
+    padding: 0.8em 0.8em;
+    margin-left: 3em;
+  }
+  .portfolio-btn {
+    padding: 0.8em 0.8em;
+  }
+  /*About me Section*/
+  #about-section {
+    background: rgb(243, 243, 245);
+    text-align: center;
+    padding: 7em 7em;
+  }
+  /*Projects Section*/
+  #projects-section {
+    padding: 7% 8%;
+  }
+  .projects-content h2::after {
+    display: none;
+  }
+  .projects-overlay-right {
+    left: 49.5%;
+  }
+  /*Contact Section*/
+  .contact-details h3::after {
+    display: none;
+  }
+  .contact-form h3::after {
+    display: none;
+  }
+  .form {
+    margin: auto;
+    width: 70%;
+    flex-wrap: wrap;
+  }
+  /*--LEFT side of contact form--*/
+  .contact-details {
+    text-align: center;
+    width: 100%;
+  }
+  /*--RIGHT side of contact form--*/
+  .contact-form {
+    width: 100%;
+  }
+  /*Footer Section*/
+}
+
+@media (min-width: 590px) and (max-width: 650px) {
+  .nav-link-2 {
+    display: block;
+    text-align: center;
+    margin-left: 7em !important;
+  }
+  .nav-link-1 {
+    display: block;
+    text-align: center;
+    margin-left: 7em !important;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+  .nav-link-2 {
+    display: block;
+    text-align: center;
+    margin-left: 7.5em !important;
+  }
+  .nav-link-1 {
+    display: block;
+    text-align: center;
+    margin-left: 7.5em !important;
+  }
+}
+@media (min-width: 730px) and (max-width: 768px) {
+  .nav-link-2 {
+    display: block;
+    text-align: center;
+    margin-left: 9em !important;
+  }
+  .nav-link-1 {
+    display: block;
+    text-align: center;
+    margin-left: 9em !important;
+  }
+}
+/*Responsive design - iPad & Tablet Screen*/
+@media (min-width: 481px) and (max-width: 768px) {
+  /*Navigation Bar Section*/
+  .header-content {
+    height: 60vh;
+  }
+  .logo {
+    left: 10%;
+    padding: 0;
+  }
+  .fa-bars {
+    display: block;
+    float: right;
+    padding: 0.8em 3em 0.9em 3em;
+    font-size: large;
+    cursor: pointer;
+  }
+  #check:checked ~ .nav-links {
+    right: 0;
+  }
+  .nav-links {
+    position: fixed;
+    background: rgb(28, 136, 118);
+    padding-top: 7em;
+    width: 100%;
+    height: 85vh;
+    top: 5.5em;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .nav-link-2 {
+    display: block;
+    text-align: center;
+    margin-left: 3em;
+  }
+  .nav-link-1 {
+    display: block;
+    text-align: center;
+    margin-left: 3em;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links ul li a {
+    font-size: 15px;
+    display: block;
+    color: white;
+    margin-bottom: 5em;
+    text-align: center;
+  }
+  .nav-links ul li a:hover {
+    background: none;
+    color: white;
+  }
+
+  /*Home Section*/
+  .portfolio-text h1 {
+    font-size: 4.1em;
+    padding: 2px;
+  }
+  .portfolio-text span {
+    font-size: 13px;
+  }
+  .portfolio-content h2 {
+    display: none;
+  }
+  .portfolio-content h4 {
+    margin-left: 30px;
+  }
+  .portfolio-content {
+    width: 100%;
+    margin-top: 5em;
+  }
+  .portfolio-content p {
+    text-align: justify;
+    margin-left: 30px;
+  }
+  .portfolio-buttons {
+    position: absolute;
+  }
+  .portfolio-active-btn {
+    padding: 0.7em 0.7em;
+    margin: 13em 0 0 1.7em;
+  }
+  .portfolio-btn {
+    padding: 0.7em 0.7em;
+    margin: 10em 0 0 0.5em;
+  }
+  /*About me Section*/
+  #about-section {
+    background: rgb(243, 243, 245);
+    text-align: center;
+    padding: 7em 4em;
+  }
+  /*Projects Section*/
+  .single-projects {
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+  .single-projects-right {
+    flex-direction: column-reverse;
+  }
+  #projects-section {
+    padding: 20% 0%;
+  }
+  .projects-overlay-right {
+    display: none;
+  }
+  .projects-content h2::after {
+    display: none;
+  }
+  .projects-img {
+    width: 100%;
+    height: 18em;
+    position: relative;
+  }
+  .img {
+    width: 100%;
+    height: 18em;
+    position: relative;
+  }
+  .projects-overlay {
+    width: 92%;
+    height: 18em;
+  }
+  .projects-content {
+    padding: 4% 5%;
+    background: white;
+  }
+  /*Contact Section*/
+  .form {
+    margin: auto;
+    width: 92%;
+    flex-wrap: wrap;
+  }
+  .contact-details {
+    text-align: center;
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form h3::after {
+    display: none;
+  }
+  .contact-details h3::after {
+    display: none;
+  }
+}
+/*Footer Section*/
+
+/*Responsive design - Mobile Screen*/
+@media (min-width: 320px) and (max-width: 482px) {
+  body {
+    background-image: linear-gradient(to right, white 70%, white 30%);
+  }
+  /*Navigation Bar Section*/
+  .header-content {
+    height: 80vh;
+    background: white;
+  }
+  .logo {
+    left: 15%;
+    padding: 0;
+  }
+  .fa-bars {
+    display: block;
+    float: right;
+    padding: 1em 3em 1em 3em;
+    font-size: large;
+    cursor: pointer;
+  }
+  #check:checked ~ .nav-links {
+    right: 0;
+  }
+  .nav-links {
+    position: fixed;
+    background: rgb(28, 136, 118);
+    padding-top: 7em;
+    width: 100%;
+    height: 85vh;
+    top: 5.5em;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .nav-link-2 {
+    display: block;
+    text-align: center;
+    margin-left: 2.5em;
+  }
+  .nav-link-1 {
+    display: block;
+    text-align: center;
+    margin-left: 2.5em;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links ul li a {
+    font-size: 15px;
+    display: block;
+    color: white;
+    margin-bottom: 5em;
+    text-align: center;
+  }
+  .nav-links ul li a:hover {
+    color: black;
+  }
+  /*Home Section*/
+  .home-image {
+    width: 100%;
+    height: 100;
+    display: unset;
+  }
+  .portfolio-text h1 {
+    display: none;
+    font-size: 2.5em;
+    padding: 2px;
+  }
+  .portfolio-text span {
+    display: none;
+    font-size: 13px;
+  }
+  .portfolio-content h2 {
+    display: none;
+  }
+  .portfolio-content h4 {
+    margin-left: 15px;
+  }
+  .portfolio-content {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .portfolio-content p {
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .portfolio-buttons {
+    position: absolute;
+  }
+  .portfolio-active-btn {
+    padding: 1em 1em;
+    margin: 28em 0 0 0.5em;
+  }
+  .portfolio-btn {
+    padding: 1em 1em;
+    margin: 10em 0 0 0.5em;
+  }
+  /*About me Section*/
+  #about-section {
+    background: rgb(243, 243, 245);
+    text-align: center;
+    padding: 7em 3em;
+  }
+  /*Projects Section*/
+  .single-projects-right {
+    flex-direction: column-reverse;
+  }
+  .single-projects {
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+  #projects-section {
+    padding: 20% 2%;
+  }
+  .projects-overlay-right {
+    width: 100%;
+    left: 0%;
+    top: 0;
+  }
+  .projects-img {
+    width: 100%;
+    height: 15em;
+    position: relative;
+  }
+  .img {
+    width: 100%;
+    height: 15em;
+    position: relative;
+  }
+  .projects-overlay {
+    width: 88%;
+    height: 15em;
+  }
+
+  .projects-content h2::after {
+    display: none;
+  }
+  /*Contact Section*/
+  #contact-section {
+    background: rgb(243, 243, 245);
+    padding: 20% 0 7% 0;
+    scroll-snap-align: center;
+  }
+  .contact-details {
+    padding: 1em 0.8em;
+  }
+  .fa-phone-alt,
+  .fa-linkedin-in,
+  .fa-github,
+  .fa-envelope {
+    margin-left: 0px;
+  }
+  .form {
+    margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+  .contact-details {
+    text-align: left;
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form h3::after {
+    display: none;
+  }
+  .contact-details h3::after {
+    display: none;
+  }
+  footer {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
