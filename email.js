@@ -10,7 +10,7 @@ function sendMail(params) {
   document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    btn.value = "Sending...";
+    btn.value = "Sending..."; 
 
     const serviceID = "default_service";
     const templateID = "template_4ti5qmm";
